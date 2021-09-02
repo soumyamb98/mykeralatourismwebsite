@@ -13,7 +13,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="./script.js"></script>
     
     </head>
 
@@ -34,59 +38,40 @@
         </nav>
 
         <h2 class="kerala-name kerala-name-large" > Kerala Tourism </h2>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-        <!-- <div class="container-fluid"> -->
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
-                  <!-- <span class="navbar-toggler-icon"></span> -->
-            <!-- </button> -->
-             <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
-        <!-- <ul class="navbar-nav"> -->
-         <!-- <li class="nav-item"> -->
-        <!-- <a class="nav-link active" aria-current="page" href="index.html"> Home </a> -->
-        <!-- </li> -->
-        <!-- <li class="nav-item"> -->
-        <!-- <a class="nav-link" href="aboutus.html"> Contact Us </a> -->
-        <!-- </li> -->
-        <!--                -->
-        <!--                -->
-        <!--                -->
-        <!-- <li class="nav-item dropdown"> -->
-        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
-                <!-- Districts -->
-        <!-- </a> -->
-         <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> -->
-         <!-- <li><a class="dropdown-item" href="ernakulam.html"> Ernakulam </a></li> -->
-        <!-- <li><a class="dropdown-item" href="palakkad.html"> Palakkad </a></li> -->
-        <!-- <li><a class="dropdown-item" href="thrissur.html"> Thrissur </a></li> -->
-        <!-- <li><a class="dropdown-item" href="#"> Thrissur </a></li> -->
-        <!-- <li><a class="dropdown-item" href="#"> Thrissur </a></li> -->
-        <!-- </ul> -->
-        <!-- </li> -->
-                  <!-- </ul> -->
-         <!-- </div> -->
-         <!-- </div> -->
-         <!-- </nav> -->
+      
+      
+       
   
       </header>
 
       <!-- <center> -->
           <section class="container mylogin">
-        <form>
+        <form action="index.html" onsubmit="return loginvalidate()">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"> Email address/username </label>
-              <input type="email" placeholder="enter your email/username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              <label class="form-label"> Email address/username </label>
+              <input type="email" placeholder="enter your email/username" class="form-control" id="loginemail" autofocus aria-describedby="emailHelp">
+              <p id="loginemailerror" class="text-danger font-weight-bolder"></p>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"> Password </label>
-              <input type="password" placeholder="enter password" class="form-control" id="exampleInputPassword1">
+              <label class="form-label"> Password </label>
+              <input type="password" placeholder="alphanumerical atleast one alpha upper one alpha lower spcl character and number" class="form-control" id="loginpassword">
+              <p id="loginpassworderror" class="text-danger font-weight-bolder"> </p>
             </div>
+
+            
+            
+            
+
+
+
+
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1"> Remember me </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+
+
           </form>
       </section>
     <!-- </center> -->

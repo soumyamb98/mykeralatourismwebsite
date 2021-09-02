@@ -5,6 +5,7 @@
 
 *{ 
     box-sizing: border-box;
+   
 }
 .imgkeralaabout{
     float: left;
@@ -22,6 +23,7 @@
     /* background-blend-mode: multiply; */
     /* background-size: 100%; */
     padding-bottom: 30px;
+    
 }
 
 .mynav ul {
@@ -171,7 +173,14 @@
 .mylogin{
         margin: 5%;
         margin-bottom: 14%;
-        width: 32%;
+        width: 54%;
+        
+}
+.mylogin input{
+        border-bottom-left-radius: 99em;
+        border-top-left-radius: 99em;
+        border-top-right-radius: 99em;
+        border-bottom-right-radius: 99em;
 }
 .mylogin label{
         text-align: left;
@@ -179,6 +188,14 @@
 .mysignup{
         width: 53%;
         margin: 2% 20%;
+}
+
+
+.mysignup input{
+        border-bottom-left-radius: 99em;
+        border-top-left-radius: 99em;
+        border-top-right-radius: 99em;
+        border-bottom-right-radius: 99em;
 }
 
 
@@ -316,4 +333,85 @@
          border-top-left-radius: 70px;
          border-top-right-radius: 70px;
          
+
+        } 
+
+
+
+
+
+
+
+
+
+#loginpassworderror{
+        /* visibility: hidden; */
+        color:"green";
+
 }
+
+
+
+#message {
+        display:none;
+        background: rgba(192, 253, 24, 0.568);
+        color: #000;
+        position: relative;
+        padding: 14px 5px;
+        margin-top: 9px;
+        margin-bottom: 10px;
+        margin-left: 23%;
+        margin-right: 32%;
+       
+       
+      }
+      #message h2{
+              color: orange;
+      }
+      
+      #message p {
+        padding: 5px 29px;
+        font-size: 14px;
+      }
+      
+      
+      .valid {
+        color: green;
+      }
+      
+      .valid:before {
+        position: relative;
+        left: -35px;
+        
+      }
+      
+     
+      .invalid {
+        color: red;
+      }
+      
+      .invalid:before {
+        position: relative;
+        left: -35px;
+        
+      }
+      
+      
+      
+      .displayBadge{
+        border-bottom-left-radius: 99em;
+        border-top-left-radius: 99em;
+        border-top-right-radius: 99em;
+        border-bottom-right-radius: 99em;  
+      }
+      
+      
+      
+      
+      
+      .mymsgclassverifychar{
+             /* margin: 5% 29%;  */
+             align-items: center;
+
+
+      }
