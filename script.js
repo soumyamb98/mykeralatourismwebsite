@@ -24,7 +24,7 @@ function validate() {
        let pwd = document.getElementById("pwd").value.trim() ;
        let ppwd = document.getElementById("ppwd").value.trim() ;
 
-        var usercheck = /^([A-Za-z\.]{3,80})$/ ;
+        var usercheck = /^([A-Za-z\. ]{3,80})$/ ;
         var mncheck = /^([5-9][0-9]{9})$|^([5-9][0-9]{2}\-[0-9]{3}\-[0-9]{4})$|^([5-9][0-9]{2}\.[0-9]{3}\.[0-9]{4})$|^([5-9][0-9]{2}\ [0-9]{3}\ [0-9]{4})$/;
         var emailcheck = /^([A-Za-z][A-Za-z0-9\.\-\_]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/
         var pwdcheck = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/
